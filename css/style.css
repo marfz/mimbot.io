@@ -5,7 +5,7 @@
   --surface: #0f0f14;
   --border:  #1c1c24;
   --text:    #c4c9d4;
-  --muted:   #55606e;
+  --muted:   #8a96a3;
   --accent:  #6b8fa8;
   --white:   #e8eaed;
   --max-w:   1080px;
@@ -219,6 +219,36 @@ h1 {
 .music-link-btn:hover { border-color: var(--muted); color: var(--white); }
 .music-link-btn svg { flex-shrink: 0; opacity: 0.7; }
 
+/* ─── ROOTS ─────────────────────────────────── */
+.roots-intro {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 640px;
+}
+.roots-tracks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.roots-tracks iframe { border: none; width: 100%; display: block; }
+.roots-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.roots-note {
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.65;
+  padding-left: 16px;
+  border-left: 2px solid var(--border);
+}
+.roots-links { flex-direction: row; flex-wrap: wrap; gap: 10px; }
+
 /* ─── BIO ────────────────────────────────────── */
 .bio-text { max-width: 640px; font-size: 17px; line-height: 1.75; }
 .bio-full { display: none; margin-top: 20px; }
@@ -389,7 +419,7 @@ footer {
   section { padding: 64px 0; }
   h1 { margin-bottom: 28px; }
   .hero-inner { padding-bottom: 64px; }
-  .music-grid { grid-template-columns: 1fr; }
+  .music-grid, .roots-tracks { grid-template-columns: 1fr; }
   .visuals-block { grid-template-columns: 1fr; padding: 32px; gap: 28px; }
   .photos-grid { grid-template-columns: repeat(2, 1fr); }
   .rider-grid { grid-template-columns: repeat(2, 1fr); }
