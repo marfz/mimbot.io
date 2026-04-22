@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "https://mimbot.komi.io"
+  status = 301
+  force = true
