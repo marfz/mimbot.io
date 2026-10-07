@@ -194,6 +194,13 @@ h1 {
   align-items: start;
 }
 .music-embed iframe { border: none; width: 100%; display: block; }
+.music-embed .music-embed-track { margin-top: 16px; }
+.music-release-note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.music-release-note a { color: inherit; text-decoration: underline; }
 .music-note {
   font-size: 14px;
   color: var(--muted);
